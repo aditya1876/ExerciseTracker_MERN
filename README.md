@@ -73,4 +73,4 @@ Taken from - https://www.youtube.com/watch?v=7CqJlxBYj-M&list=WL&index=1
   Create a folder called models under <backup_folder>
   Create .js files for the models in this folder
   ```
--
+- Create Routes
