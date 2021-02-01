@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export NODE_PATH='/home/adi01/01_Code/Projects/ExerciseTracker_MERN/env/lib/node_modules'
+export NPM_CONFIG_PREFIX='/home/adi01/01_Code/Projects/ExerciseTracker_MERN/env'
+export npm_config_prefix='/home/adi01/01_Code/Projects/ExerciseTracker_MERN/env'
+exec '/home/adi01/01_Code/Projects/ExerciseTracker_MERN/env/bin/node' "$@"
