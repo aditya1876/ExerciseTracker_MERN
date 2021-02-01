@@ -67,10 +67,13 @@ Taken from - https://www.youtube.com/watch?v=7CqJlxBYj-M&list=WL&index=1
   To run the server:
   nodemon server
   ```
-- create .env folder in backend to capture all the environment variables
+- create .env folder in backend to capture all the environment variables (add the file to .gitignore)
+
 - create database schema:
   ```
   Create a folder called models under <backup_folder>
   Create .js files for the models in this folder
   ```
-- Create Routes
+- Create Routes by creating a folder routes within backend folder
+  - update server.js with the routing information
+  - update the files in 'routes' folder to perform routing
