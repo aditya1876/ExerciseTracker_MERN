@@ -1,2 +1,2 @@
 # Ignore the .env file that has db creds
-./backend/.env
+./exercisetracker_mern/backend/.env
