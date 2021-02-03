@@ -75,5 +75,28 @@ Taken from - https://www.youtube.com/watch?v=7CqJlxBYj-M&list=WL&index=1
   Create .js files for the models in this folder
   ```
 - Create Routes by creating a folder routes within backend folder
+
   - update server.js with the routing information
-  - update the files in 'routes' folder to perform routing
+  - update the files in 'oroutes' folder to perform routing
+
+- Create frontend
+
+  - within public folder > update index.html
+  - within src folder > update index.js, app.js
+  - app.js is the main file that app starts
+
+  ```
+  to run the app:
+  navigate to main app folder
+  npm start
+  ```
+
+  - install
+
+  ```
+  npm install bootstrap
+  npm install react-router-dom
+
+  ```
+
+  - create folder called components inside the same directory as app.js and add all the react components in it
