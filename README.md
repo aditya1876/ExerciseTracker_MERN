@@ -100,3 +100,4 @@ Taken from - https://www.youtube.com/watch?v=7CqJlxBYj-M&list=WL&index=1
   ```
 
   - create folder called components inside the same directory as app.js and add all the react components in it
+  - Enter code in the components for each module
