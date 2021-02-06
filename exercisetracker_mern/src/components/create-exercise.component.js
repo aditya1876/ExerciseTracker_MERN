@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
+import axios from 'axios';
 
+/* 
 export default class CreateExercise extends Component {
 
-  constructor(props) {
+
+ constructor(props) {
     super(props);
 
     //bind the 'this' to the correct 'this'
@@ -23,9 +28,17 @@ export default class CreateExercise extends Component {
 
   //React lifecycle method that is called before anything is displayed on the page
   componentDidMount() {
-    this.setState({
-      user: ['test user'],
-      username: 'test user'
+    axios.get('http://localhost:5000/users/')
+    .then(response => {
+      if (response.data.length > 0) {
+        this.setState({
+          users: response.data.map(user => user.username),
+          username: response.data[0].username  //defaults to first entry in users list
+        })
+      }
+    })
+    .catch((error) => {
+      console.log(error);
     })
   }
 
@@ -67,6 +80,10 @@ export default class CreateExercise extends Component {
     }
 
     console.log(exercise);  
+
+    //send the data to backend/db
+    axios.post('http://localhost:5000/exercises/add', exercise) //post the request to backend
+      .then(res => console.log(res.data));  //log the output of post request to console
 
     window.location = '/'; //navigates user back to homepage
   }
@@ -132,13 +149,13 @@ export default class CreateExercise extends Component {
     );
   }
 }
+*/
 
 
-/*
-import React, { Component } from 'react';
-import axios from 'axios';
-import DatePicker from 'react-datepicker';
-import "react-datepicker/dist/react-datepicker.css";
+//import React, { Component } from 'react';
+//import axios from 'axios';
+//import DatePicker from 'react-datepicker';
+//import "react-datepicker/dist/react-datepicker.css";
 
 export default class CreateExercise extends Component {
   constructor(props) {
@@ -275,4 +292,3 @@ export default class CreateExercise extends Component {
     )
   }
 }
-*/

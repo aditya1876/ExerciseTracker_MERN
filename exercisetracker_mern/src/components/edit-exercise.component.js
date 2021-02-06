@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react';
 
 export default class EditExercise extends Component {
@@ -9,7 +10,8 @@ export default class EditExercise extends Component {
     );
   }
 }
-/*
+*/
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
@@ -162,4 +164,3 @@ export default class EditExercise extends Component {
     )
   }
 }
-*/
